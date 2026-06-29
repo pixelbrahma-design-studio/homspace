@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services — HOMSPACE Kerala Complete Furnishing</title>
+  <meta name="description" content="Complete furnishing services by HOMSPACE Kerala — Wallpaper, Wall Panels, Curtains, Blinds, Partition Doors, Mosquito Nets. Free site visit & professional installation.">
+  <link rel="icon" type="image/png" href="../assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    /* ── Services Hero ─────────────────────────────── */
+    .svc-hero-v2 { padding: calc(var(--nav-h) + 64px) 0 80px; }
+    .svc-hero-v2 .container { position: relative; z-index: 2; }
+    .svc-hero-inner { display: grid; grid-template-columns: 1fr 500px; gap: 72px; align-items: center; }
+    .svc-hero-text h1 { color: white; line-height: 1.2; margin-bottom: 0; }
+    .svc-hero-desc { color: rgba(255,255,255,0.55); font-size: 17px; line-height: 1.65; margin: 22px 0 32px; }
+    .svc-hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+
+    .shc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .shc {
+      display: flex; align-items: center; gap: 13px;
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 13px; padding: 15px 17px; color: white; text-decoration: none;
+      transition: background 0.25s, border-color 0.25s;
+    }
+    .shc:hover { background: rgba(200,169,126,0.14); border-color: rgba(200,169,126,0.4); }
+    .shc-iw {
+      width: 40px; height: 40px; border-radius: 9px; flex-shrink: 0;
+      background: rgba(200,169,126,0.14); border: 1px solid rgba(200,169,126,0.25);
+      display: flex; align-items: center; justify-content: center; color: var(--gold);
+    }
+    .shc-name { font-size: 13px; font-weight: 700; display: block; }
+    .shc-sub  { font-size: 10.5px; color: rgba(255,255,255,0.4); display: block; margin-top: 2px; }
+
+    /* ── Included Bar ──────────────────────────────── */
+    .svc-inc-bar { background: var(--gold-pale); border-bottom: 1px solid var(--gold-light); padding: 14px 0; }
+    .svc-inc-inner { display: flex; align-items: center; gap: 0; }
+    .svc-inc-label {
+      font-size: 10px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--gold-hover); flex-shrink: 0; padding-right: 24px; margin-right: 24px;
+      border-right: 1px solid var(--gold-light); white-space: nowrap;
+    }
+    .svc-inc-list { display: flex; flex-wrap: wrap; list-style: none; gap: 0; margin: 0; padding: 0; }
+    .svc-inc-list li {
+      font-size: 12.5px; font-weight: 600; color: var(--text-dark);
+      display: flex; align-items: center; gap: 7px; padding: 2px 20px 2px 0;
+    }
+    .svc-inc-list li svg { color: var(--gold); flex-shrink: 0; }
+
+    /* ── Rich Service Panels ───────────────────────── */
+    .sdr-visual {
+      display: block; min-height: 460px; position: relative;
+      border-radius: var(--radius-xl); overflow: hidden;
+    }
+    .sdr-visual::before {
+      content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+    }
+    .sdr-visual::after {
+      content: attr(data-num);
+      position: absolute; bottom: -20px; right: -2px; z-index: 1;
+      font-size: 170px; font-weight: 900; letter-spacing: -0.05em; line-height: 1;
+      color: rgba(255,255,255,0.055); pointer-events: none;
+    }
+    /* Pattern overlays per product */
+    .wp-bg-svc::before {
+      background: repeating-linear-gradient(0deg,rgba(255,255,255,0.04) 0,rgba(255,255,255,0.04) 1px,transparent 1px,transparent 56px),
+                  repeating-linear-gradient(90deg,rgba(255,255,255,0.04) 0,rgba(255,255,255,0.04) 1px,transparent 1px,transparent 56px);
+    }
+    .panels-bg-svc::before {
+      background: repeating-linear-gradient(90deg,rgba(255,255,255,0.09) 0,rgba(255,255,255,0.09) 2px,transparent 2px,transparent 38px);
+    }
+    .curtains-bg-svc::before {
+      background: repeating-linear-gradient(90deg,rgba(255,255,255,0.09) 0,rgba(255,255,255,0.09) 3px,transparent 3px,transparent 26px);
+    }
+    .blinds-bg-svc::before {
+      background: repeating-linear-gradient(0deg,rgba(255,255,255,0.11) 0,rgba(255,255,255,0.11) 3px,transparent 3px,transparent 20px);
+    }
+    .partition-bg-svc::before {
+      background: repeating-linear-gradient(90deg,rgba(255,255,255,0.1) 0,rgba(255,255,255,0.1) 2px,transparent 2px,transparent 88px);
+    }
+    .nets-bg-svc::before {
+      background: repeating-linear-gradient(45deg,rgba(255,255,255,0.05) 0,rgba(255,255,255,0.05) 1px,transparent 1px,transparent 13px),
+                  repeating-linear-gradient(-45deg,rgba(255,255,255,0.05) 0,rgba(255,255,255,0.05) 1px,transparent 1px,transparent 13px);
+    }
+    .sdr-inner {
+      position: absolute; inset: 0; z-index: 2;
+      display: flex; flex-direction: column; justify-content: space-between; padding: 34px;
+    }
+    .sdr-toprow { display: flex; justify-content: space-between; align-items: flex-start; }
+    .sdr-seq { font-size: 11px; font-weight: 700; letter-spacing: 0.22em; color: rgba(255,255,255,0.38); }
+    .sdr-pill {
+      font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+      color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18); padding: 4px 12px; border-radius: 20px;
+    }
+    .sdr-pname {
+      font-size: 48px; font-weight: 800; color: white; letter-spacing: -0.03em;
+      line-height: 1; margin: auto 0 0;
+    }
+    .sdr-stat-strip {
+      display: flex; gap: 1px; background: rgba(255,255,255,0.08);
+      border-radius: 10px; overflow: hidden; margin-top: 18px;
+    }
+    .sdr-ss-item { flex: 1; padding: 15px 18px; background: rgba(0,0,0,0.28); }
+    .sdr-ss-num { font-size: 28px; font-weight: 900; color: white; line-height: 1; }
+    .sdr-ss-lbl {
+      font-size: 10px; color: rgba(255,255,255,0.48); margin-top: 4px;
+      text-transform: uppercase; letter-spacing: 0.08em;
+    }
+    /* content adjustments */
+    .sdr-content { padding: 8px 0; }
+    .sdr-tag {
+      display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--gold-hover); background: var(--gold-pale);
+      border: 1px solid var(--gold-light); border-radius: 4px; padding: 4px 10px; margin-bottom: 18px;
+    }
+    .sdr-content h3 { font-size: 30px; margin-bottom: 18px; }
+    .sdr-content p  { color: var(--text-mid); margin-bottom: 24px; line-height: 1.75; font-size: 15.5px; }
+    .sdr-features { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+    .sdr-features span {
+      font-size: 12px; font-weight: 600; color: var(--text-dark);
+      background: var(--off-white); border: 1px solid var(--border); border-radius: 4px; padding: 5px 12px;
+    }
+
+    /* ── Responsive ────────────────────────────────── */
+    @media (max-width:1100px) {
+      .svc-hero-inner { grid-template-columns: 1fr 440px; gap: 56px; }
+      .sdr-visual { min-height: 400px; }
+      .sdr-pname { font-size: 40px; }
+    }
+    @media (max-width:900px) {
+      .svc-hero-inner { grid-template-columns: 1fr; gap: 44px; }
+      .shc-grid { grid-template-columns: repeat(3,1fr); }
+      .svc-inc-inner { flex-direction: column; align-items: flex-start; gap: 12px; }
+      .svc-inc-label { border-right: none; padding-right: 0; margin-right: 0; }
+    }
+    @media (max-width:768px) {
+      .shc-grid { grid-template-columns: 1fr 1fr; }
+      .svc-hero-v2 { padding-bottom: 56px; }
+      .sdr-visual { min-height: 300px; }
+      .sdr-pname { font-size: 32px; }
+      .sdr-visual::after { font-size: 110px; }
+      .sdr-inner { padding: 24px; }
+      .sdr-ss-num { font-size: 22px; }
+    }
+    @media (max-width:480px) {
+      .shc-grid { grid-template-columns: 1fr; }
+      .svc-hero-btns { flex-direction: column; }
+      .sdr-visual { min-height: 240px; }
+      .sdr-pname { font-size: 26px; }
+      .sdr-visual::after { display: none; }
+      .sdr-inner { padding: 18px; }
+      .sdr-stat-strip { gap: 0; }
+      .sdr-ss-num { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar solid" id="navbar">
+  <div class="nav-container">
+    <a href="../index.html" class="nav-logo">HOMSPACE</a>
+    <ul class="nav-menu" id="navMenu">
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link">Products <span class="dropdown-arrow">▾</span></a>
+        <div class="dropdown-menu"><div class="dropdown-grid">
+          <a href="wallpaper.html" class="dropdown-item"><span class="di-icon">◈</span><span class="di-text"><strong>Wallpaper</strong><small>100+ designs · 5 tiers</small></span></a>
+          <a href="wall-panels.html" class="dropdown-item"><span class="di-icon">▣</span><span class="di-text"><strong>Wall Panels</strong><small>WPC, PVC, Decorative</small></span></a>
+          <a href="curtains.html" class="dropdown-item"><span class="di-icon">〓</span><span class="di-text"><strong>Curtains</strong><small>Ripple, Pleated, Motorized</small></span></a>
+          <a href="blinds.html" class="dropdown-item"><span class="di-icon">≡</span><span class="di-text"><strong>Blinds</strong><small>Roman, Roller, Zebra</small></span></a>
+          <a href="partition-doors.html" class="dropdown-item"><span class="di-icon">⊟</span><span class="di-text"><strong>Partition Doors</strong><small>Folding, Sliding, Glass</small></span></a>
+          <a href="mosquito-nets.html" class="dropdown-item"><span class="di-icon">⊞</span><span class="di-text"><strong>Mosquito Nets</strong><small>Premium protection</small></span></a>
+        </div></div>
+      </li>
+      <li class="nav-item"><a href="services.html" class="nav-link active">Services</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="tel:+919778063015" class="nav-phone">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.95 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012.86 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+        +91 97780 63015
+      </a>
+      <a href="contact.html" class="btn btn-gold btn-sm">Free Consultation</a>
+    </div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ══ HERO ════════════════════════════════════════════════ -->
+<section class="page-hero svc-hero-v2">
+  <div class="container">
+    <div class="svc-hero-inner">
+      <div class="svc-hero-text">
+        <span class="eyebrow">What We Offer</span>
+        <h1>Complete<br><span class="gold-text">Furnishing</span><br>Solutions</h1>
+        <p class="svc-hero-desc">Six specialist service areas — designed for your home and delivered by Kerala's most trusted furnishing team. Every project, end to end.</p>
+        <div class="svc-hero-btns">
+          <a href="contact.html" class="btn btn-gold btn-lg">Book Free Site Visit</a>
+          <a href="#all-services" class="btn btn-outline-white btn-lg">Explore Services ↓</a>
+        </div>
+      </div>
+
+      <!-- 6 service mini-cards -->
+      <div class="shc-grid">
+        <a href="wallpaper.html" class="shc">
+          <div class="shc-iw">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="3"/><path d="M2 9h20M9 9v13"/><circle cx="6" cy="5.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+          </div>
+          <div><span class="shc-name">Wallpaper</span><span class="shc-sub">100+ Designs · 5 Tiers</span></div>
+        </a>
+        <a href="wall-panels.html" class="shc">
+          <div class="shc-iw">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="2"/><line x1="8.5" y1="2" x2="8.5" y2="22"/><line x1="15.5" y1="2" x2="15.5" y2="22"/></svg>
+          </div>
+          <div><span class="shc-name">Wall Panels</span><span class="shc-sub">7 Types · WPC, PVC</span></div>
+        </a>
+        <a href="curtains.html" class="shc">
+          <div class="shc-iw">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="2" y1="3" x2="22" y2="3"/><path d="M5 3c0 3-2 6-2 9s2 6 2 9"/><path d="M19 3c0 3 2 6 2 9s-2 6-2 9"/></svg>
+          </div>
+          <div><span class="shc-name">Curtains</span><span class="shc-sub">6 Styles · Motorized</span></div>
+        </a>
+        <a href="blinds.html" class="shc">
+          <div class="shc-iw">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="8" x2="21" y2="8"/><line x1="3" y1="13" x2="21" y2="13"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </div>
+          <div><span class="shc-name">Blinds</span><span class="shc-sub">Roman, Roller, Zebra</span></div>
+        </a>
+        <a href="partition-doors.html" class="shc">
+          <div class="shc-iw">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="3" width="9" height="18" rx="1"/><rect x="13" y="3" width="9" height="18" rx="1"/></svg>
+          </div>
+          <div><span class="shc-name">Partition Doors</span><span class="shc-sub">Folding, Sliding, Glass</span></div>
+        </a>
+        <a href="mosquito-nets.html" class="shc">
+          <div class="shc-iw">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9" stroke-opacity="0.5"/><line x1="3" y1="15" x2="21" y2="15" stroke-opacity="0.5"/><line x1="9" y1="3" x2="9" y2="21" stroke-opacity="0.5"/><line x1="15" y1="3" x2="15" y2="21" stroke-opacity="0.5"/></svg>
+          </div>
+          <div><span class="shc-name">Mosquito Nets</span><span class="shc-sub">Invisible · 4 Types</span></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ INCLUDED BAR ════════════════════════════════════════ -->
+<div class="svc-inc-bar">
+  <div class="container">
+    <div class="svc-inc-inner">
+      <span class="svc-inc-label">Every Service Includes</span>
+      <ul class="svc-inc-list">
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Free Site Visit</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Free Measurement</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Design Consultation</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Expert Installation</li>
+        <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>After-Sales Support</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ══ ALL SERVICES ════════════════════════════════════════ -->
+<section class="section" id="all-services">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="eyebrow">What We Do</span>
+      <h2>Six Specialist Services</h2>
+      <p>Each area handled with expert knowledge, premium products, and professional installation — under one roof.</p>
+    </div>
+
+    <div class="service-detail-list">
+
+      <!-- Wallpaper -->
+      <div class="service-detail-row fade-up">
+        <div class="sdr-visual wp-bg-svc" data-num="01">
+          <div class="sdr-inner">
+            <div class="sdr-toprow">
+              <span class="sdr-seq">01 / 06</span>
+              <span class="sdr-pill">Walls</span>
+            </div>
+            <div class="sdr-pname">Wallpaper</div>
+            <div class="sdr-stat-strip">
+              <div class="sdr-ss-item"><div class="sdr-ss-num">100+</div><div class="sdr-ss-lbl">Designs</div></div>
+              <div class="sdr-ss-item"><div class="sdr-ss-num">5</div><div class="sdr-ss-lbl">Quality Tiers</div></div>
+              <div class="sdr-ss-item"><div class="sdr-ss-num">5</div><div class="sdr-ss-lbl">Premium Brands</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="sdr-content">
+          <div class="sdr-tag">5 Tiers · 100+ Designs</div>
+          <h3>Wallpaper</h3>
+          <p>Transform any wall from plain to extraordinary. We stock over 100 designs across 5 tiers — from budget-friendly economic options to custom luxury wallcoverings from top brands like Marshal, Fedora, Excel, SMPl, and Nilaya.</p>
+          <div class="sdr-features">
+            <span>Economic to Luxury tiers</span>
+            <span>Feature walls &amp; full rooms</span>
+            <span>Textured, printed &amp; custom</span>
+            <span>Free samples at your home</span>
+          </div>
+          <a href="wallpaper.html" class="btn btn-outline-dark btn-sm">View Wallpapers →</a>
+        </div>
+      </div>
+
+      <!-- Wall Panels -->
+      <div class="service-detail-row reverse fade-up">
+        <div class="sdr-visual panels-bg-svc" data-num="02">
+          <div class="sdr-inner">
+            <div class="sdr-toprow">
+              <span class="sdr-seq">02 / 06</span>
+              <span class="sdr-pill">Walls</span>
+            </div>
+            <div class="sdr-pname">Wall Panels</div>
+            <div class="sdr-stat-strip">
+              <div class="sdr-ss-item"><div class="sdr-ss-num">7</div><div class="sdr-ss-lbl">Panel Types</div></div>
+              <div class="sdr-ss-item"><div class="sdr-ss-num">WPC</div><div class="sdr-ss-lbl">Most Popular</div></div>
+              <div class="sdr-ss-item"><div class="sdr-ss-num">2in1</div><div class="sdr-ss-lbl">Res &amp; Commercial</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="sdr-content">
+          <div class="sdr-tag">7 Types · Residential &amp; Commercial</div>
+          <h3>Wall Panels</h3>
+          <p>Create stunning feature walls and transform entire rooms with our comprehensive range of wall panels. WPC, WPVC, PVC, Charcoal, Decorative, Soffit boards, and Wall Moulding — each suited to different aesthetics and applications.</p>
+          <div class="sdr-features">
+            <span>Moisture-resistant options</span>
+            <span>Conceals wires &amp; uneven walls</span>
+            <span>WPC, PVC, Charcoal &amp; Decorative</span>
+            <span>Custom cut &amp; fit</span>
+          </div>
+          <a href="wall-panels.html" class="btn btn-outline-dark btn-sm">View Wall Panels →</a>
+        </div>
+      </div>
+
+      <!-- Curtains -->
+      <div class="service-detail-row fade-up">
+        <div class="sdr-visual curtains-bg-svc" data-num="03">
+          <div class="sdr-inner">
+            <div class="sdr-toprow">
+              <span class="sdr-seq">03 / 06</span>
+              <span class="sdr-pill">Windows</span>
+            </div>
+            <div class="sdr-pname">Curtains</div>
+            <div class="sdr-stat-strip">
+              <div class="sdr-ss-item"><div class="sdr-ss-num">6</div><div class="sdr-ss-lbl">Styles</div></div>
+              <div class="sdr-ss-item"><div class="sdr-ss-num">Auto</div><div class="sdr-ss-lbl">Motorized Option</div></div>
+              <div class="sdr-ss-item"><div class="sdr-ss-num">Custom</div><div class="sdr-ss-lbl">Fabric &amp; Colour</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="sdr-content">
+          <div class="sdr-tag">6 Styles · Residential to Industrial</div>
+          <h3>Curtains</h3>
+          <p>The right curtain transforms the mood of an entire room. We offer 6 curtain styles — Ripple Fold, Pleated, Eyelet, Motorized, Hospital-grade, and Industrial — to suit every window, every budget, and every design vision.</p>
+          <div class="sdr-features">
+            <span>Motorized smart curtains</span>
+            <span>Custom fabric &amp; colour</span>
+            <span>Tracks &amp; rods included</span>
+            <span>Hospital &amp; industrial grade</span>
+          </div>
+          <a href="curtains.html" class="btn btn-outline-dark btn-sm">View Curtains →</a>
+        </div>
+      </div>
+
+      <!-- Blinds -->
+      <div class="service-detail-row reverse fade-up">
+        <div class="sdr-visual blinds-bg-svc" data-num="04">
+          <div class="sdr-inner">
+            <div class="sdr-toprow">
+              <span class="sdr-seq">04 / 06</span>
+              <span class="sdr-pill">Windows</span>
+            </div>
+            <div class="sdr-pname">Blinds</div>
+            <div class="sdr-stat-strip">
+              <div class="sdr-ss-item"><div class="sdr-ss-num">4</div><div class="sdr-ss-lbl">Types</div></div>
+              <div class="sdr-ss-item"><div class="sdr-ss-num">100%</div><div class="sdr-ss-lbl">Blackout Opt.</div></div>
+              <div class="sdr-ss-item"><div class="sdr-ss-num">Auto</div><div class="sdr-ss-lbl">Motorized Opt.</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="sdr-content">
+          <div class="sdr-tag">4 Types · Light Control Specialists</div>
+          <h3>Blinds</h3>
+          <p>Blinds give you precise control over light and privacy with a clean, modern aesthetic. Our range covers Roman, Roller, Zebra, and Venetian blinds — with motorized options available for ultimate convenience.</p>
+          <div class="sdr-features">
+            <span>Roman, Roller, Zebra, Venetian</span>
+            <span>Blackout &amp; day-night options</span>
+            <span>Motorized available</span>
+            <span>Office &amp; home solutions</span>
+          </div>
+          <a href="blinds.html" class="btn btn-outline-dark btn-sm">View Blinds →</a>
+        </div>
+      </div>
+
+      <!-- Partition Doors -->
+      <div class="service-detail-row fade-up">
+        <div class="sdr-visual partition-bg-svc" data-num="05">
+          <div class="sdr-inner">
+            <div class="sdr-toprow">
+              <span class="sdr-seq">05 / 06</span>
+              <span class="sdr-pill">Spaces</span>
+            </div>
+            <div class="sdr-pname">Partition<br>Doors</div>
+            <div class="sdr-stat-strip">
+              <div class="sdr-ss-item"><div class="sdr-ss-num">4</div><div class="sdr-ss-lbl">Door Types</div></div>
+              <div class="sdr-ss-item"><div class="sdr-ss-num">Custom</div><div class="sdr-ss-lbl">Any Opening</div></div>
+              <div class="sdr-ss-item"><div class="sdr-ss-num">Sound</div><div class="sdr-ss-lbl">Dampening Opt.</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="sdr-content">
+          <div class="sdr-tag">Custom Fit · Residential &amp; Commercial</div>
+          <h3>Partition Doors</h3>
+          <p>Define and divide your spaces with style. Our partition systems include Folding, Sliding, Glass, and Wood options — custom measured for any opening, with acoustic options for offices, meeting rooms, and clinics.</p>
+          <div class="sdr-features">
+            <span>Folding, Sliding, Glass, Wood</span>
+            <span>Sound-dampening options</span>
+            <span>Custom size for any opening</span>
+            <span>Residential &amp; commercial</span>
+          </div>
+          <a href="partition-doors.html" class="btn btn-outline-dark btn-sm">View Partitions →</a>
+        </div>
+      </div>
+
+      <!-- Mosquito Nets -->
+      <div class="service-detail-row reverse fade-up">
+        <div class="sdr-visual nets-bg-svc" data-num="06">
+          <div class="sdr-inner">
+            <div class="sdr-toprow">
+              <span class="sdr-seq">06 / 06</span>
+              <span class="sdr-pill">Protection</span>
+            </div>
+            <div class="sdr-pname">Mosquito<br>Nets</div>
+            <div class="sdr-stat-strip">
+              <div class="sdr-ss-item"><div class="sdr-ss-num">4</div><div class="sdr-ss-lbl">Net Types</div></div>
+              <div class="sdr-ss-item"><div class="sdr-ss-num">Zero</div><div class="sdr-ss-lbl">Visibility</div></div>
+              <div class="sdr-ss-item"><div class="sdr-ss-num">All</div><div class="sdr-ss-lbl">Windows &amp; Doors</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="sdr-content">
+          <div class="sdr-tag">4 Types · Invisible Protection</div>
+          <h3>Mosquito Nets</h3>
+          <p>Keep mosquitoes out without compromising your interiors. Our nets use ultra-fine fibreglass mesh that's barely visible when installed. Choose from Pleated, Retractable, Fixed Frame, and Magnetic options — all custom fitted.</p>
+          <div class="sdr-features">
+            <span>Pleated, Roller, Fixed, Magnetic</span>
+            <span>No-drill options available</span>
+            <span>Invisible from inside</span>
+            <span>All windows &amp; doors</span>
+          </div>
+          <a href="mosquito-nets.html" class="btn btn-outline-dark btn-sm">View Mosquito Nets →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROCESS ══════════════════════════════════════════════ -->
+<section class="process-section section-warm">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="eyebrow">How It Works</span>
+      <h2>Your Transformation in 6 Steps</h2>
+      <p>A seamless, professionally managed process from first contact to beautifully finished space.</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step fade-up"><div class="step-num-circle">01</div><div class="step-content"><h4>Consultation Call</h4><p>Tell us about your space, vision, and budget — we listen and plan the perfect approach.</p></div></div>
+      <div class="process-step fade-up fade-up-delay-1"><div class="step-num-circle">02</div><div class="step-content"><h4>Free Site Visit</h4><p>Our expert visits, measures the space, notes lighting, and assesses your requirements.</p></div></div>
+      <div class="process-step fade-up fade-up-delay-2"><div class="step-num-circle">03</div><div class="step-content"><h4>Design &amp; Samples</h4><p>We create a mood board and bring physical samples — you see and feel it before deciding.</p></div></div>
+      <div class="process-step fade-up fade-up-delay-3"><div class="step-num-circle">04</div><div class="step-content"><h4>Transparent Quote</h4><p>Itemised quotation — no hidden costs. Choose your options and approve the plan.</p></div></div>
+      <div class="process-step fade-up"><div class="step-num-circle">05</div><div class="step-content"><h4>Professional Install</h4><p>Our trained team arrives on schedule, installs precisely, and cleans up thoroughly.</p></div></div>
+      <div class="process-step fade-up fade-up-delay-1"><div class="step-num-circle active">06</div><div class="step-content"><h4>Space Revealed</h4><p>Your beautifully transformed space — exactly as imagined. We follow up to ensure satisfaction.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PACKAGES ════════════════════════════════════════════ -->
+<section class="packages-section section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="eyebrow">Popular Bundles</span>
+      <h2>Packages for Every Type of Space</h2>
+      <p>Pre-packaged solutions — expertly curated for apartments, villas, and commercial spaces.</p>
+    </div>
+    <div class="packages-grid">
+      <div class="package-card fade-up">
+        <div class="package-header pkg-apartment">
+          <div class="pkg-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/><path d="M9 21V12h6v9"/></svg>
+          </div>
+          <h3>Apartment Package</h3>
+          <p class="package-subtitle">Perfect for 2–3 BHK apartments</p>
+        </div>
+        <ul class="package-includes">
+          <li>Living Room Wallpaper</li>
+          <li>Bedroom Curtains</li>
+          <li>Hall Blinds</li>
+          <li>TV Wall Panel</li>
+          <li>Free Design Consultation</li>
+          <li>Professional Installation</li>
+        </ul>
+        <div class="package-footer">
+          <div><span class="package-start">Starting from</span><strong class="package-start">₹50,000</strong></div>
+          <a href="contact.html" class="btn btn-outline-dark btn-sm">Enquire</a>
+        </div>
+      </div>
+      <div class="package-card featured fade-up fade-up-delay-1">
+        <div class="package-badge">Most Popular</div>
+        <div class="package-header pkg-villa">
+          <div class="pkg-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 8.5V20a1 1 0 001 1h4v-5h4v5h4a1 1 0 001-1V8.5"/></svg>
+          </div>
+          <h3>Villa Package</h3>
+          <p class="package-subtitle">Premium full-home solution</p>
+        </div>
+        <ul class="package-includes">
+          <li>Designer Wallpapers — All Rooms</li>
+          <li>Motorized Blinds</li>
+          <li>Luxury Curtains</li>
+          <li>Wood Wall Panels</li>
+          <li>Glass Partition System</li>
+          <li>Mosquito Net Protection</li>
+          <li>Mood Board &amp; 3D Preview</li>
+          <li>Professional Installation</li>
+        </ul>
+        <div class="package-footer">
+          <div><span class="package-start">Starting from</span><strong class="package-start">₹2,00,000</strong></div>
+          <a href="contact.html" class="btn btn-gold btn-sm">Enquire</a>
+        </div>
+      </div>
+      <div class="package-card fade-up fade-up-delay-2">
+        <div class="package-header pkg-commercial">
+          <div class="pkg-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg>
+          </div>
+          <h3>Commercial Package</h3>
+          <p class="package-subtitle">For offices, hotels &amp; clinics</p>
+        </div>
+        <ul class="package-includes">
+          <li>Professional Roller Blinds</li>
+          <li>Partition Door System</li>
+          <li>Feature Wall Panels</li>
+          <li>Mosquito Net Solutions</li>
+          <li>Project Management</li>
+          <li>Annual Maintenance Option</li>
+        </ul>
+        <div class="package-footer">
+          <div><span class="package-start">Pricing</span><strong class="package-start">Custom Quote</strong></div>
+          <a href="contact.html" class="btn btn-outline-dark btn-sm">Get Quote</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ══════════════════════════════════════════════════ -->
+<section class="product-cta" id="enquire">
+  <div class="container">
+    <div class="product-cta-grid">
+      <div class="product-cta-left">
+        <span class="eyebrow">Let's Start</span>
+        <h2>Ready for Your Transformation?</h2>
+        <p>Book a free consultation today — our expert visits your home, assesses the space, shows you samples, and provides a transparent quote. No obligation, no pressure.</p>
+        <ul class="cta-checklist">
+          <li>Free site visit &amp; measurement</li>
+          <li>Expert design recommendations</li>
+          <li>Physical samples brought to your home</li>
+          <li>Professional installation &amp; support</li>
+        </ul>
+        <div class="product-cta-btns">
+          <a href="tel:+919778063015" class="btn btn-outline-white">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" style="margin-right:6px"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.95 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012.86 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            +91 97780 63015
+          </a>
+          <a href="https://wa.me/919778063015?text=Hi%20HOMSPACE!%20I%27d%20like%20to%20enquire%20about%20your%20services." class="btn-whatsapp" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.118 1.532 5.845L.054 23.625 6.012 22.12A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.814 9.814 0 01-5.002-1.37l-.357-.213-3.713.974.993-3.63-.232-.374A9.817 9.817 0 012.182 12C2.182 6.573 6.573 2.182 12 2.182c5.428 0 9.818 4.39 9.818 9.818 0 5.427-4.39 9.818-9.818 9.818z"/></svg>
+            WhatsApp Now
+          </a>
+        </div>
+      </div>
+      <div>
+        <form class="enquiry-form">
+          <h3>Book Free Site Visit</h3>
+          <div class="form-group"><label>Your Name</label><input type="text" placeholder="e.g. Rahul Sharma" required></div>
+          <div class="form-row">
+            <div class="form-group"><label>Phone</label><input type="tel" placeholder="+91 XXXXX XXXXX" required></div>
+            <div class="form-group"><label>City</label><input type="text" placeholder="e.g. Kochi"></div>
+          </div>
+          <div class="form-group">
+            <label>Service Required</label>
+            <select><option value="">Select a service</option><option>Wallpaper</option><option>Wall Panels</option><option>Curtains</option><option>Blinds</option><option>Partition Doors</option><option>Mosquito Nets</option><option>Full Home Package</option><option>Commercial Project</option></select>
+          </div>
+          <div class="form-group"><label>Message</label><textarea placeholder="Tell us about your space, requirements, timeline…" rows="3"></textarea></div>
+          <button type="submit" class="btn btn-gold btn-full">Book Free Site Visit</button>
+          <p class="form-note">Free consultation · No obligations</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">HOMSPACE</div>
+        <p class="footer-tagline">Spaces, Beautifully Yours.</p>
+        <p class="footer-desc">Kerala's most trusted furnishing transformation partner — from walls to windows, we create homes people love to live in.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="https://wa.me/919778063015" aria-label="WhatsApp"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.118 1.532 5.845L.054 23.625 6.012 22.12A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.814 9.814 0 01-5.002-1.37l-.357-.213-3.713.974.993-3.63-.232-.374A9.817 9.817 0 012.182 12C2.182 6.573 6.573 2.182 12 2.182c5.428 0 9.818 4.39 9.818 9.818 0 5.427-4.39 9.818-9.818 9.818z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-links"><h5>Products</h5><ul><li><a href="wallpaper.html">Wallpaper</a></li><li><a href="wall-panels.html">Wall Panels</a></li><li><a href="curtains.html">Curtains</a></li><li><a href="blinds.html">Blinds</a></li><li><a href="partition-doors.html">Partition Doors</a></li><li><a href="mosquito-nets.html">Mosquito Nets</a></li></ul></div>
+      <div class="footer-links"><h5>Company</h5><ul><li><a href="about.html">About Us</a></li><li><a href="services.html">Our Services</a></li><li><a href="contact.html">Contact</a></li><li><a href="../index.html#packages">Packages</a></li><li><a href="../index.html#process">Our Process</a></li></ul></div>
+      <div class="footer-links"><h5>Contact</h5><ul><li><a href="tel:+919778063015">+91 97780 63015</a></li><li><a href="mailto:info@homspace.store">info@homspace.store</a></li><li><a href="https://homspace.store" target="_blank">homspace.store</a></li><li style="color:var(--text-light);font-size:13px;">Kalavath Road, Palarivattom, Ernakulam</li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 HOMSPACE. All rights reserved.</p><p>Spaces, Beautifully Yours.</p></div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

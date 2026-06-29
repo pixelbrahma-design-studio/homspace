@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curtains — HOMSPACE Kerala</title>
+  <meta name="description" content="Ripple, Pleated, Eyelet, Motorized, Hospital and Industrial curtains. Expert curtain installation across Kerala.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .bg-ripple    { background: linear-gradient(135deg,#D8CCB8 0%,#C0B09A 100%); }
+    .bg-pleated   { background: linear-gradient(135deg,#C8B8A0 0%,#A89880 100%); }
+    .bg-eyelet    { background: linear-gradient(135deg,#B8A898 0%,#988878 100%); }
+    .bg-motorized { background: linear-gradient(135deg,#888098 0%,#605860 100%); }
+    .bg-hospital  { background: linear-gradient(135deg,#A8C0B8 0%,#809898 100%); }
+    .bg-industrial{ background: linear-gradient(135deg,#808890 0%,#606870 100%); }
+    .product-item-img::after {
+      content: attr(data-label);
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 11px; font-weight: 700; letter-spacing: 0.12em;
+      color: rgba(255,255,255,0.4); text-transform: uppercase;
+    }
+    /* Curtain fold illusion on cards */
+    .bg-ripple::before, .bg-pleated::before, .bg-eyelet::before {
+      content:'';
+      position: absolute; inset: 0;
+      background-image: repeating-linear-gradient(90deg,rgba(0,0,0,0.04) 0px,rgba(0,0,0,0.04) 1px,transparent 1px,transparent 32px);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar solid" id="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">HOMSPACE</a>
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link">Products <span class="dropdown-arrow">▾</span></a>
+          <div class="dropdown-menu"><div class="dropdown-grid">
+            <a href="wallpaper.html" class="dropdown-item"><span class="di-icon">◈</span><span class="di-text"><strong>Wallpaper</strong><small>100+ designs · 5 tiers</small></span></a>
+            <a href="wall-panels.html" class="dropdown-item"><span class="di-icon">▣</span><span class="di-text"><strong>Wall Panels</strong><small>WPC, PVC, Decorative</small></span></a>
+            <a href="curtains.html" class="dropdown-item"><span class="di-icon">〓</span><span class="di-text"><strong>Curtains</strong><small>Ripple, Pleated, Motorized</small></span></a>
+            <a href="blinds.html" class="dropdown-item"><span class="di-icon">≡</span><span class="di-text"><strong>Blinds</strong><small>Roman, Roller, Zebra</small></span></a>
+            <a href="partition-doors.html" class="dropdown-item"><span class="di-icon">⊟</span><span class="di-text"><strong>Partition Doors</strong><small>Space dividers</small></span></a>
+            <a href="mosquito-nets.html" class="dropdown-item"><span class="di-icon">⊞</span><span class="di-text"><strong>Mosquito Nets</strong><small>Premium protection</small></span></a>
+          </div></div>
+        </li>
+        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="tel:+919778063015" class="nav-phone">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.95 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012.86 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          +91 97780 63015
+        </a>
+        <a href="contact.html" class="btn btn-gold btn-sm">Free Consultation</a>
+      </div>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container page-hero-content">
+      <span class="eyebrow">Our Products</span>
+      <h1>Curtains</h1>
+      <p>Six curtain styles for residential and commercial spaces — from flowing ripple pleats to smart motorized systems. Professional fitting included.</p>
+    </div>
+  </section>
+
+  <div class="filter-bar">
+    <div class="filter-bar-inner">
+      <button class="filter-btn active" data-filter="all">All Styles</button>
+      <button class="filter-btn" data-filter="ripple">Ripple</button>
+      <button class="filter-btn" data-filter="pleated">Pleated</button>
+      <button class="filter-btn" data-filter="eyelet">Eyelet</button>
+      <button class="filter-btn" data-filter="motorized">Motorized</button>
+      <button class="filter-btn" data-filter="hospital">Hospital</button>
+      <button class="filter-btn" data-filter="industrial">Industrial</button>
+    </div>
+  </div>
+
+  <section class="products-section">
+    <div class="container">
+
+      <div data-category="ripple">
+        <p class="product-category-title">Ripple Fold — Contemporary Wave</p>
+        <div class="products-listing">
+          <div class="product-item"><div class="product-item-img bg-ripple" data-label="Ripple 1"></div><div class="product-item-info"><h4>Sheer Ripple</h4><p>Light sheer fabric that creates beautiful, flowing waves of light.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img bg-ripple" data-label="Ripple 2"></div><div class="product-item-info"><h4>Blackout Ripple</h4><p>Full blackout fabric — perfect for bedrooms and media rooms.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img bg-ripple" data-label="Ripple 3"></div><div class="product-item-info"><h4>Linen Ripple</h4><p>Natural linen look with the elegant ripple fold header.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img bg-ripple" data-label="Ripple 4"></div><div class="product-item-info"><h4>Velvet Ripple</h4><p>Luxurious velvet fabric with ripple pleating — statement curtain.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+        </div>
+      </div>
+
+      <div data-category="pleated">
+        <p class="product-category-title">Pleated — Classic Elegance</p>
+        <div class="products-listing">
+          <div class="product-item"><div class="product-item-img bg-pleated" data-label="Pleated 1"></div><div class="product-item-info"><h4>Pinch Pleat</h4><p>Traditional pinch pleat — structured, formal, and timeless.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img bg-pleated" data-label="Pleated 2"></div><div class="product-item-info"><h4>Box Pleat</h4><p>Deep box pleats for a clean, modern formal look.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img bg-pleated" data-label="Pleated 3"></div><div class="product-item-info"><h4>Goblet Pleat</h4><p>Goblet-shaped pleats — regal and sophisticated for living rooms.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img bg-pleated" data-label="Pleated 4"></div><div class="product-item-info"><h4>Triple Pleat</h4><p>Three-finger triple pleat — full and luxurious appearance.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+        </div>
+      </div>
+
+      <div data-category="eyelet">
+        <p class="product-category-title">Eyelet — Modern Simplicity</p>
+        <div class="products-listing">
+          <div class="product-item"><div class="product-item-img bg-eyelet" data-label="Eyelet 1"></div><div class="product-item-info"><h4>Classic Eyelet</h4><p>Metal eyelet rings — easy to slide and effortlessly modern.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img bg-eyelet" data-label="Eyelet 2"></div><div class="product-item-info"><h4>Blackout Eyelet</h4><p>Heavy blackout fabric with eyelet heading for complete darkness.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img bg-eyelet" data-label="Eyelet 3"></div><div class="product-item-info"><h4>Printed Eyelet</h4><p>Bold printed fabric patterns with convenient eyelet header.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+        </div>
+      </div>
+
+      <div data-category="motorized">
+        <p class="product-category-title">Motorized — Smart Living</p>
+        <div class="products-listing">
+          <div class="product-item"><div class="product-item-img bg-motorized" data-label="Motorized 1"></div><div class="product-item-info"><h4>Remote Motorized</h4><p>Open and close curtains at the touch of a button. Ideal for large windows.</p><button class="btn btn-gold btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img bg-motorized" data-label="Motorized 2"></div><div class="product-item-info"><h4>Smart Home Motorized</h4><p>Connects with Alexa, Google Home, or your smart home system.</p><button class="btn btn-gold btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img bg-motorized" data-label="Motorized 3"></div><div class="product-item-info"><h4>Timer Motorized</h4><p>Scheduled automatic opening and closing — wake up to natural light.</p><button class="btn btn-gold btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+        </div>
+      </div>
+
+      <div data-category="hospital">
+        <p class="product-category-title">Hospital — Healthcare Grade</p>
+        <div class="products-listing">
+          <div class="product-item"><div class="product-item-img bg-hospital" data-label="Hospital 1"></div><div class="product-item-info"><h4>Anti-Bacterial Curtain</h4><p>Flame retardant &amp; anti-bacterial — for hospitals, clinics, and care homes.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img bg-hospital" data-label="Hospital 2"></div><div class="product-item-info"><h4>Privacy Cubicle Track</h4><p>Ceiling track curtain system — for patient privacy in clinical spaces.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img bg-hospital" data-label="Hospital 3"></div><div class="product-item-info"><h4>Washable Healthcare</h4><p>60°C washable fabric — hygienic and practical for regular cleaning.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+        </div>
+      </div>
+
+      <div data-category="industrial">
+        <p class="product-category-title">Industrial — Commercial Grade</p>
+        <div class="products-listing">
+          <div class="product-item"><div class="product-item-img bg-industrial" data-label="Industrial 1"></div><div class="product-item-info"><h4>Strip Curtain</h4><p>PVC strip curtains — for warehouses, cold storage, and loading docks.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img bg-industrial" data-label="Industrial 2"></div><div class="product-item-info"><h4>Welding Curtain</h4><p>Heavy duty welding screen — safety and privacy for industrial use.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img bg-industrial" data-label="Industrial 3"></div><div class="product-item-info"><h4>Room Divider Track</h4><p>Commercial room divider curtain on ceiling-mounted track.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="product-cta" id="enquire">
+    <div class="container">
+      <div class="product-cta-grid">
+        <div class="product-cta-left">
+          <span class="eyebrow">Get Started</span>
+          <h2>Find the Perfect Curtain for Your Space</h2>
+          <p>Free consultation at your home — we bring fabric samples, take precise measurements, and recommend the perfect style to complement your interiors.</p>
+          <ul class="cta-checklist">
+            <li>6 curtain styles including motorized options</li>
+            <li>Fabrics sourced to your taste &amp; budget</li>
+            <li>Precision measurement &amp; perfect installation</li>
+            <li>Tracks, rods &amp; accessories included</li>
+          </ul>
+          <div class="product-cta-btns">
+            <a href="tel:+919778063015" class="btn btn-outline-white">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" style="margin-right:6px"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.95 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012.86 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              +91 97780 63015
+            </a>
+            <a href="https://wa.me/919778063015?text=Hi%20HOMSPACE!%20I%27d%20like%20to%20enquire%20about%20Curtains." class="btn-whatsapp" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.118 1.532 5.845L.054 23.625 6.012 22.12A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.814 9.814 0 01-5.002-1.37l-.357-.213-3.713.974.993-3.63-.232-.374A9.817 9.817 0 012.182 12C2.182 6.573 6.573 2.182 12 2.182c5.428 0 9.818 4.39 9.818 9.818 0 5.427-4.39 9.818-9.818 9.818z"/></svg>
+              WhatsApp Now
+            </a>
+          </div>
+        </div>
+        <div>
+          <form class="enquiry-form">
+            <h3>Enquire About Curtains</h3>
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="e.g. Priya Nair" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="+91 XXXXX XXXXX" required>
+              </div>
+              <div class="form-group">
+                <label>City</label>
+                <input type="text" placeholder="e.g. Kochi">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Curtain Style</label>
+              <select>
+                <option value="">Select style</option>
+                <option>Ripple Fold</option>
+                <option>Pleated</option>
+                <option>Eyelet</option>
+                <option>Motorized</option>
+                <option>Hospital</option>
+                <option>Industrial</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Message (optional)</label>
+              <textarea placeholder="Tell us about your space and vision…" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold btn-full">Send Enquiry</button>
+            <p class="form-note">Free site visit · Free fabric samples · No obligations</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="container"><div class="footer-bottom" style="border-top:1px solid rgba(255,255,255,0.06);padding-top:28px;">
+    <p>&copy; 2026 HOMSPACE · <a href="../index.html" style="color:var(--gold);">Back to Home</a></p>
+    <p>+91 97780 63015 · info@homspace.store</p>
+  </div></div></footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

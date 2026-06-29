@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wallpaper — HOMSPACE Kerala</title>
+  <meta name="description" content="Premium wallpapers in Economic, Advanced, Premium, Luxury and Customised tiers. Brands: Marshal, Fedora, Excel, SMPl, Nilaya. 100+ designs, expert installation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .wp-economic   { background: linear-gradient(135deg,#C8BFB5 0%,#B0A598 100%); }
+    .wp-advanced   { background: linear-gradient(135deg,#A89080 0%,#8C7060 100%); }
+    .wp-premium    { background: linear-gradient(135deg,#C4947E 0%,#A87260 100%); }
+    .wp-luxury     { background: linear-gradient(135deg,#BF9A6E 0%,#9E7845 100%); }
+    .wp-custom     { background: linear-gradient(135deg,#8C8070 0%,#6E6050 100%); }
+    .product-item-img::after {
+      content: attr(data-label);
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 11px; font-weight: 700; letter-spacing: 0.12em;
+      color: rgba(255,255,255,0.45); text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar solid" id="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">HOMSPACE</a>
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link">Products <span class="dropdown-arrow">▾</span></a>
+          <div class="dropdown-menu">
+            <div class="dropdown-grid">
+              <a href="wallpaper.html" class="dropdown-item"><span class="di-icon">◈</span><span class="di-text"><strong>Wallpaper</strong><small>100+ designs · 5 tiers</small></span></a>
+              <a href="wall-panels.html" class="dropdown-item"><span class="di-icon">▣</span><span class="di-text"><strong>Wall Panels</strong><small>WPC, PVC, Decorative</small></span></a>
+              <a href="curtains.html" class="dropdown-item"><span class="di-icon">〓</span><span class="di-text"><strong>Curtains</strong><small>Ripple, Pleated, Motorized</small></span></a>
+              <a href="blinds.html" class="dropdown-item"><span class="di-icon">≡</span><span class="di-text"><strong>Blinds</strong><small>Roman, Roller, Zebra</small></span></a>
+              <a href="partition-doors.html" class="dropdown-item"><span class="di-icon">⊟</span><span class="di-text"><strong>Partition Doors</strong><small>Space dividers</small></span></a>
+              <a href="mosquito-nets.html" class="dropdown-item"><span class="di-icon">⊞</span><span class="di-text"><strong>Mosquito Nets</strong><small>Premium protection</small></span></a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="tel:+919778063015" class="nav-phone">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.95 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012.86 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          +91 97780 63015
+        </a>
+        <a href="contact.html" class="btn btn-gold btn-sm">Free Consultation</a>
+      </div>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container page-hero-content">
+      <span class="eyebrow">Our Products</span>
+      <h1>Wallpaper</h1>
+      <p>100+ designs across 5 quality tiers. Trusted brands, expert installation, and prices to suit every budget — from simple elegance to pure luxury.</p>
+    </div>
+  </section>
+
+  <!-- Filter Bar -->
+  <div class="filter-bar">
+    <div class="filter-bar-inner">
+      <button class="filter-btn active" data-filter="all">All Tiers</button>
+      <button class="filter-btn" data-filter="economic">Economic</button>
+      <button class="filter-btn" data-filter="advanced">Advanced</button>
+      <button class="filter-btn" data-filter="premium">Premium</button>
+      <button class="filter-btn" data-filter="luxury">Luxury</button>
+      <button class="filter-btn" data-filter="customised">Customised</button>
+    </div>
+  </div>
+
+  <!-- Products -->
+  <section class="products-section">
+    <div class="container">
+
+      <!-- Brands Strip -->
+      <div style="background:var(--off-white);border-radius:12px;padding:28px 36px;margin-bottom:48px;display:flex;align-items:center;gap:40px;flex-wrap:wrap;">
+        <span style="font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-light);">Brands</span>
+        <span style="font-size:17px;font-weight:700;color:var(--text-dark);">Marshal</span>
+        <span style="font-size:17px;font-weight:700;color:var(--text-dark);">Fedora</span>
+        <span style="font-size:17px;font-weight:700;color:var(--text-dark);">Excel</span>
+        <span style="font-size:17px;font-weight:700;color:var(--text-dark);">SMPl</span>
+        <span style="font-size:17px;font-weight:700;color:var(--text-dark);">Nilaya</span>
+        <span style="font-size:13px;color:var(--text-light);">+ more premium brands</span>
+      </div>
+
+      <!-- Economic -->
+      <div data-category="economic">
+        <p class="product-category-title">Economic Tier — Everyday Elegance</p>
+        <div class="products-listing">
+          <div class="product-item"><div class="product-item-img wp-economic" data-label="Design 1"></div><div class="product-item-info"><span class="tier-badge tier-economic">Economic</span><h4>Classic Texture</h4><p>Subtle embossed texture, ideal for living rooms &amp; bedrooms.</p><p class="price-note">Price on request per sq.ft</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img wp-economic" data-label="Design 2"></div><div class="product-item-info"><span class="tier-badge tier-economic">Economic</span><h4>Linen Effect</h4><p>Natural linen weave look for a clean, calm atmosphere.</p><p class="price-note">Price on request per sq.ft</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img wp-economic" data-label="Design 3"></div><div class="product-item-info"><span class="tier-badge tier-economic">Economic</span><h4>Geometric Repeat</h4><p>Modern geometric pattern, versatile for any room style.</p><p class="price-note">Price on request per sq.ft</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img wp-economic" data-label="Design 4"></div><div class="product-item-info"><span class="tier-badge tier-economic">Economic</span><h4>Subtle Stripe</h4><p>Classic vertical stripe, adds height and elegance to rooms.</p><p class="price-note">Price on request per sq.ft</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+        </div>
+      </div>
+
+      <!-- Advanced -->
+      <div data-category="advanced">
+        <p class="product-category-title">Advanced Tier — Elevated Style</p>
+        <div class="products-listing">
+          <div class="product-item"><div class="product-item-img wp-advanced" data-label="Design 1"></div><div class="product-item-info"><span class="tier-badge tier-advanced">Advanced</span><h4>Marble Effect</h4><p>Sophisticated marble look, perfect for feature walls.</p><p class="price-note">Price on request per sq.ft</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img wp-advanced" data-label="Design 2"></div><div class="product-item-info"><span class="tier-badge tier-advanced">Advanced</span><h4>Botanical Print</h4><p>Lush tropical botanical design, brings nature indoors.</p><p class="price-note">Price on request per sq.ft</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img wp-advanced" data-label="Design 3"></div><div class="product-item-info"><span class="tier-badge tier-advanced">Advanced</span><h4>3D Cube Pattern</h4><p>Eye-catching 3D optical illusion for modern interiors.</p><p class="price-note">Price on request per sq.ft</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img wp-advanced" data-label="Design 4"></div><div class="product-item-info"><span class="tier-badge tier-advanced">Advanced</span><h4>Damask Classic</h4><p>Timeless damask pattern, elegant and traditional.</p><p class="price-note">Price on request per sq.ft</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+        </div>
+      </div>
+
+      <!-- Premium -->
+      <div data-category="premium">
+        <p class="product-category-title">Premium Tier — Refined Luxury</p>
+        <div class="products-listing">
+          <div class="product-item"><div class="product-item-img wp-premium" data-label="Design 1"></div><div class="product-item-info"><span class="tier-badge tier-premium">Premium</span><h4>Velvet Emboss</h4><p>Lush velvet embossed texture — deep, rich, and opulent.</p><p class="price-note">Price on request per sq.ft</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img wp-premium" data-label="Design 2"></div><div class="product-item-info"><span class="tier-badge tier-premium">Premium</span><h4>Antique Gold</h4><p>Gold accent wallpaper with intricate motif detailing.</p><p class="price-note">Price on request per sq.ft</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img wp-premium" data-label="Design 3"></div><div class="product-item-info"><span class="tier-badge tier-premium">Premium</span><h4>Abstract Art</h4><p>Bold abstract design, makes a powerful statement wall.</p><p class="price-note">Price on request per sq.ft</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img wp-premium" data-label="Design 4"></div><div class="product-item-info"><span class="tier-badge tier-premium">Premium</span><h4>Wood Grain</h4><p>Realistic wood grain finish without the maintenance of real wood.</p><p class="price-note">Price on request per sq.ft</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+        </div>
+      </div>
+
+      <!-- Luxury -->
+      <div data-category="luxury">
+        <p class="product-category-title">Luxury Tier — Exceptional Finishes</p>
+        <div class="products-listing">
+          <div class="product-item"><div class="product-item-img wp-luxury" data-label="Design 1"></div><div class="product-item-info"><span class="tier-badge tier-luxury">Luxury</span><h4>Silk Impression</h4><p>Silk-effect wallcovering that shimmers with light movement.</p><p class="price-note">Price on request per sq.ft</p><button class="btn btn-gold btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img wp-luxury" data-label="Design 2"></div><div class="product-item-info"><span class="tier-badge tier-luxury">Luxury</span><h4>Hand-Crafted Mural</h4><p>Bespoke hand-painted mural style wallcovering, truly unique.</p><p class="price-note">Price on request per sq.ft</p><button class="btn btn-gold btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img wp-luxury" data-label="Design 3"></div><div class="product-item-info"><span class="tier-badge tier-luxury">Luxury</span><h4>Metallic Foil</h4><p>Metallic foil wallpaper for the ultimate glamour statement.</p><p class="price-note">Price on request per sq.ft</p><button class="btn btn-gold btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img wp-luxury" data-label="Design 4"></div><div class="product-item-info"><span class="tier-badge tier-luxury">Luxury</span><h4>Natural Grass-cloth</h4><p>Woven natural grass-cloth texture — organic and sophisticated.</p><p class="price-note">Price on request per sq.ft</p><button class="btn btn-gold btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+        </div>
+      </div>
+
+      <!-- Customised -->
+      <div data-category="customised">
+        <p class="product-category-title">Customised Tier — Designed for You</p>
+        <div class="products-listing">
+          <div class="product-item"><div class="product-item-img wp-custom" data-label="Custom Design"></div><div class="product-item-info"><span class="tier-badge tier-custom">Customised</span><h4>Your Vision, Your Wall</h4><p>Fully customised wallpaper — we design around your exact ideas, colours, and dimensions.</p><p class="price-note">Priced by project</p><button class="btn btn-black btn-sm btn-full" data-enquire>Start Custom Order</button></div></div>
+          <div class="product-item" style="background:var(--gold-pale);border:1.5px dashed var(--gold-light);display:flex;align-items:center;justify-content:center;padding:40px;border-radius:12px;">
+            <div style="text-align:center;">
+              <div style="font-size:32px;margin-bottom:12px;">✦</div>
+              <p style="font-size:14px;color:var(--text-mid);margin-bottom:16px;">Have a specific design in mind? We source and create it for you.</p>
+              <button class="btn btn-gold btn-sm" data-enquire>Discuss Custom Design</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-cta" id="enquire">
+    <div class="container">
+      <div class="product-cta-grid">
+        <div class="product-cta-left">
+          <span class="eyebrow">Get Started</span>
+          <h2>Ready to Find Your Perfect Wallpaper?</h2>
+          <p>We bring samples to your home, help you choose the right design for your space, and our skilled team handles installation flawlessly — no bubbles, no creases.</p>
+          <ul class="cta-checklist">
+            <li>100+ wallpaper designs across 5 price tiers</li>
+            <li>Free in-home samples &amp; design consultation</li>
+            <li>Expert installation — professional, clean, and precise</li>
+            <li>1-year service warranty on all installations</li>
+          </ul>
+          <div class="product-cta-btns">
+            <a href="tel:+919778063015" class="btn btn-outline-white">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" style="margin-right:6px"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.95 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012.86 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              +91 97780 63015
+            </a>
+            <a href="https://wa.me/919778063015?text=Hi%20HOMSPACE!%20I%27d%20like%20to%20enquire%20about%20Wallpaper." class="btn-whatsapp" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.118 1.532 5.845L.054 23.625 6.012 22.12A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.814 9.814 0 01-5.002-1.37l-.357-.213-3.713.974.993-3.63-.232-.374A9.817 9.817 0 012.182 12C2.182 6.573 6.573 2.182 12 2.182c5.428 0 9.818 4.39 9.818 9.818 0 5.427-4.39 9.818-9.818 9.818z"/></svg>
+              WhatsApp Now
+            </a>
+          </div>
+        </div>
+        <div>
+          <form class="enquiry-form">
+            <h3>Enquire About Wallpaper</h3>
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="e.g. Rahul Sharma" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="+91 XXXXX XXXXX" required>
+              </div>
+              <div class="form-group">
+                <label>City</label>
+                <input type="text" placeholder="e.g. Kochi">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Wallpaper Tier</label>
+              <select>
+                <option value="">Select tier</option>
+                <option>Economic</option>
+                <option>Advanced</option>
+                <option>Premium</option>
+                <option>Luxury</option>
+                <option>Customised</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Message (optional)</label>
+              <textarea placeholder="Tell us about your space and vision…" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold btn-full">Send Enquiry</button>
+            <p class="form-note">Free site visit · Free samples · No obligations</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top:1px solid rgba(255,255,255,0.06);padding-top:28px;">
+        <p>&copy; 2026 HOMSPACE · <a href="../index.html" style="color:var(--gold);">Back to Home</a></p>
+        <p>+91 97780 63015 · info@homspace.store</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

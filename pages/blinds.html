@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blinds — HOMSPACE Kerala</title>
+  <meta name="description" content="Roman, Roller, Zebra and Venetian blinds. Light control with elegant design. Expert blind installation across Kerala.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .bg-roman    { background: linear-gradient(135deg,#C0B098 0%,#A09080 100%); }
+    .bg-roller   { background: linear-gradient(135deg,#8090A0 0%,#607080 100%); }
+    .bg-zebra    { background: repeating-linear-gradient(0deg,rgba(255,255,255,0.18) 0px,rgba(255,255,255,0.18) 12px,transparent 12px,transparent 24px), linear-gradient(135deg,#7080A0 0%,#506080 100%); }
+    .bg-venetian { background: repeating-linear-gradient(0deg,rgba(255,255,255,0.2) 0px,rgba(255,255,255,0.2) 3px,transparent 3px,transparent 18px), linear-gradient(135deg,#A09080 0%,#807060 100%); }
+    .product-item-img::after {
+      content: attr(data-label);
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 11px; font-weight: 700; letter-spacing: 0.12em;
+      color: rgba(255,255,255,0.4); text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar solid" id="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">HOMSPACE</a>
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link">Products <span class="dropdown-arrow">▾</span></a>
+          <div class="dropdown-menu"><div class="dropdown-grid">
+            <a href="wallpaper.html" class="dropdown-item"><span class="di-icon">◈</span><span class="di-text"><strong>Wallpaper</strong><small>100+ designs</small></span></a>
+            <a href="wall-panels.html" class="dropdown-item"><span class="di-icon">▣</span><span class="di-text"><strong>Wall Panels</strong><small>7 types</small></span></a>
+            <a href="curtains.html" class="dropdown-item"><span class="di-icon">〓</span><span class="di-text"><strong>Curtains</strong><small>6 styles</small></span></a>
+            <a href="blinds.html" class="dropdown-item"><span class="di-icon">≡</span><span class="di-text"><strong>Blinds</strong><small>Roman, Roller, Zebra</small></span></a>
+            <a href="partition-doors.html" class="dropdown-item"><span class="di-icon">⊟</span><span class="di-text"><strong>Partition Doors</strong><small>Custom</small></span></a>
+            <a href="mosquito-nets.html" class="dropdown-item"><span class="di-icon">⊞</span><span class="di-text"><strong>Mosquito Nets</strong><small>Premium</small></span></a>
+          </div></div>
+        </li>
+        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="tel:+919778063015" class="nav-phone">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.95 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012.86 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          +91 97780 63015
+        </a>
+        <a href="contact.html" class="btn btn-gold btn-sm">Free Consultation</a>
+      </div>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container page-hero-content">
+      <span class="eyebrow">Our Products</span>
+      <h1>Blinds</h1>
+      <p>Roman, Roller, Zebra, and Venetian blinds — precise light control, clean aesthetics, and expert installation for homes and offices.</p>
+    </div>
+  </section>
+
+  <div class="filter-bar">
+    <div class="filter-bar-inner">
+      <button class="filter-btn active" data-filter="all">All Types</button>
+      <button class="filter-btn" data-filter="roman">Roman</button>
+      <button class="filter-btn" data-filter="roller">Roller</button>
+      <button class="filter-btn" data-filter="zebra">Zebra</button>
+      <button class="filter-btn" data-filter="venetian">Venetian</button>
+    </div>
+  </div>
+
+  <!-- Blinds Comparison Info Bar -->
+  <div class="blinds-compare-bar">
+    <div class="container">
+      <div class="feat-grid-padded" style="background:var(--gold-pale);margin-bottom:0;border-radius:0;">
+        <div><p style="font-size:13px;font-weight:700;color:var(--text-dark);margin-bottom:4px;">Roman Blinds</p><p style="font-size:12px;color:var(--text-mid);">Soft fabric folds — warm &amp; elegant</p></div>
+        <div><p style="font-size:13px;font-weight:700;color:var(--text-dark);margin-bottom:4px;">Roller Blinds</p><p style="font-size:12px;color:var(--text-mid);">Clean &amp; minimal — office favourite</p></div>
+        <div><p style="font-size:13px;font-weight:700;color:var(--text-dark);margin-bottom:4px;">Zebra Blinds</p><p style="font-size:12px;color:var(--text-mid);">Dual layer — light or privacy</p></div>
+        <div><p style="font-size:13px;font-weight:700;color:var(--text-dark);margin-bottom:4px;">Venetian Blinds</p><p style="font-size:12px;color:var(--text-mid);">Adjustable slats — precise control</p></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="products-section">
+    <div class="container">
+
+      <div data-category="roman">
+        <p class="product-category-title">Roman Blinds — Soft &amp; Sophisticated</p>
+        <div class="products-listing">
+          <div class="product-item"><div class="product-item-img bg-roman" data-label="Roman 1"></div><div class="product-item-info"><h4>Flat Roman</h4><p>Clean flat fold when raised — contemporary and minimal look.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img bg-roman" data-label="Roman 2"></div><div class="product-item-info"><h4>Hobbled Roman</h4><p>Cascading fabric folds — traditional and elegant for living rooms.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img bg-roman" data-label="Roman 3"></div><div class="product-item-info"><h4>Blackout Roman</h4><p>Full blackout lining — ideal for bedrooms and nurseries.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img bg-roman" data-label="Roman 4"></div><div class="product-item-info"><h4>Linen Roman</h4><p>Natural linen texture — brings warmth and organic feel to rooms.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+        </div>
+      </div>
+
+      <div data-category="roller">
+        <p class="product-category-title">Roller Blinds — Clean &amp; Versatile</p>
+        <div class="products-listing">
+          <div class="product-item"><div class="product-item-img bg-roller" data-label="Roller 1"></div><div class="product-item-info"><h4>Sunscreen Roller</h4><p>Filters UV and glare while maintaining your outside view.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img bg-roller" data-label="Roller 2"></div><div class="product-item-info"><h4>Blackout Roller</h4><p>Complete room darkening — perfect for bedrooms and AV rooms.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img bg-roller" data-label="Roller 3"></div><div class="product-item-info"><h4>Printed Roller</h4><p>Custom printed designs — add personality to any space.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img bg-roller" data-label="Roller 4"></div><div class="product-item-info"><h4>Motorized Roller</h4><p>Automated roller blind with remote or smart home control.</p><button class="btn btn-gold btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+        </div>
+      </div>
+
+      <div data-category="zebra">
+        <p class="product-category-title">Zebra Blinds — Dual-Layer Light Control</p>
+        <div class="products-listing">
+          <div class="product-item"><div class="product-item-img bg-zebra" data-label="Zebra 1"></div><div class="product-item-info"><h4>Classic Zebra</h4><p>Alternate sheer &amp; opaque bands — shift for light or privacy.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img bg-zebra" data-label="Zebra 2"></div><div class="product-item-info"><h4>Wide Stripe Zebra</h4><p>Wider fabric bands for a bolder, more dramatic visual effect.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img bg-zebra" data-label="Zebra 3"></div><div class="product-item-info"><h4>Motorized Zebra</h4><p>Remote or smart-home controlled zebra blind — effortless luxury.</p><button class="btn btn-gold btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img bg-zebra" data-label="Zebra 4"></div><div class="product-item-info"><h4>Blackout Zebra</h4><p>Heavy blackout fabric version — maximum privacy when closed.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+        </div>
+      </div>
+
+      <div data-category="venetian">
+        <p class="product-category-title">Venetian Blinds — Timeless Precision</p>
+        <div class="products-listing">
+          <div class="product-item"><div class="product-item-img bg-venetian" data-label="Venetian 1"></div><div class="product-item-info"><h4>Aluminium Venetian</h4><p>Classic aluminium slats — easy to clean, durable, precise control.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img bg-venetian" data-label="Venetian 2"></div><div class="product-item-info"><h4>Wood Venetian</h4><p>Real wood slats — natural warmth and premium appearance.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img bg-venetian" data-label="Venetian 3"></div><div class="product-item-info"><h4>Faux Wood Venetian</h4><p>Moisture-resistant faux wood — ideal for kitchens and bathrooms.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+          <div class="product-item"><div class="product-item-img bg-venetian" data-label="Venetian 4"></div><div class="product-item-info"><h4>Micro Venetian</h4><p>Narrow 16mm slats — sleek, contemporary minimal look.</p><button class="btn btn-outline-dark btn-sm btn-full" data-enquire>Enquire Now</button></div></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="product-cta" id="enquire">
+    <div class="container">
+      <div class="product-cta-grid">
+        <div class="product-cta-left">
+          <span class="eyebrow">Get Started</span>
+          <h2>Control Light. Elevate Your Space.</h2>
+          <p>Not sure which blind suits your window? Our expert visits your home, assesses your light and privacy needs, and recommends the perfect blind solution.</p>
+          <ul class="cta-checklist">
+            <li>4 types: Roman, Roller, Zebra, Venetian</li>
+            <li>Motorized options for effortless control</li>
+            <li>Perfect light control for every room</li>
+            <li>Professionally measured &amp; installed</li>
+          </ul>
+          <div class="product-cta-btns">
+            <a href="tel:+919778063015" class="btn btn-outline-white">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" style="margin-right:6px"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.95 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012.86 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              +91 97780 63015
+            </a>
+            <a href="https://wa.me/919778063015?text=Hi%20HOMSPACE!%20I%27d%20like%20to%20enquire%20about%20Blinds." class="btn-whatsapp" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.118 1.532 5.845L.054 23.625 6.012 22.12A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.814 9.814 0 01-5.002-1.37l-.357-.213-3.713.974.993-3.63-.232-.374A9.817 9.817 0 012.182 12C2.182 6.573 6.573 2.182 12 2.182c5.428 0 9.818 4.39 9.818 9.818 0 5.427-4.39 9.818-9.818 9.818z"/></svg>
+              WhatsApp Now
+            </a>
+          </div>
+        </div>
+        <div>
+          <form class="enquiry-form">
+            <h3>Enquire About Blinds</h3>
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="e.g. Anoop Nair" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="+91 XXXXX XXXXX" required>
+              </div>
+              <div class="form-group">
+                <label>City</label>
+                <input type="text" placeholder="e.g. Kochi">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Blind Type</label>
+              <select>
+                <option value="">Select type</option>
+                <option>Roman Blinds</option>
+                <option>Roller Blinds</option>
+                <option>Zebra Blinds</option>
+                <option>Venetian Blinds</option>
+                <option>Not Sure — Need Advice</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Message (optional)</label>
+              <textarea placeholder="Tell us about your space — room type, window size, light preferences…" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold btn-full">Send Enquiry</button>
+            <p class="form-note">Free site visit · Free measurement · No obligations</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="container"><div class="footer-bottom" style="border-top:1px solid rgba(255,255,255,0.06);padding-top:28px;">
+    <p>&copy; 2026 HOMSPACE · <a href="../index.html" style="color:var(--gold);">Back to Home</a></p>
+    <p>+91 97780 63015 · info@homspace.store</p>
+  </div></div></footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

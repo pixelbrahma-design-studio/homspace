@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About HOMSPACE — Kerala's Furnishing Transformation Brand</title>
+  <meta name="description" content="Learn about HOMSPACE — over 10 years of furnishing expertise, 1000+ spaces transformed across Kerala. Our story, values, and why customers trust us.">
+  <link rel="icon" type="image/png" href="../assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    /* ── About Hero ───────────────────────────────── */
+    .about-hero-v2 { text-align: center; padding-bottom: 100px; }
+    .about-hero-inner { max-width: 760px; margin: 0 auto; position: relative; z-index: 2; }
+    .about-hero-inner h1 { color: white; margin-bottom: 20px; }
+    .about-hero-inner .lead { color: rgba(255,255,255,0.5); margin-bottom: 40px; }
+    .about-hero-manifesto {
+      border-top: 1px solid rgba(200,169,126,0.25); padding-top: 32px; margin-top: 4px;
+    }
+    .ahm-text {
+      font-size: 20px; font-weight: 300; font-style: italic;
+      color: var(--gold); letter-spacing: 0.04em; display: block;
+    }
+
+    /* ── Brand Story ─────────────────────────────── */
+    .about-brand-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+    .about-brand-text h2 { margin-bottom: 24px; }
+    .about-brand-text p  { color: var(--text-mid); line-height: 1.78; font-size: 15.5px; margin-bottom: 18px; }
+    .about-brand-pull {
+      font-size: 18px; font-weight: 600; color: var(--text-dark); line-height: 1.5;
+      border-left: 3px solid var(--gold); padding-left: 22px; margin: 28px 0; font-style: italic;
+    }
+
+    /* Manifesto card (right side of brand story) */
+    .about-manifesto-card {
+      background: var(--black); border-radius: var(--radius-xl); padding: 44px 40px;
+      position: relative; overflow: hidden;
+    }
+    .about-manifesto-card::before {
+      content: '\201C';
+      position: absolute; top: -18px; left: 22px;
+      font-size: 160px; font-weight: 900; color: rgba(200,169,126,0.12);
+      line-height: 1; font-family: Georgia, serif; pointer-events: none;
+    }
+    .amc-text {
+      font-size: 21px; font-weight: 600; color: white; line-height: 1.55;
+      font-style: italic; position: relative; z-index: 1; margin-bottom: 20px;
+    }
+    .amc-attr { font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); }
+    .amc-stats {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1px;
+      background: rgba(255,255,255,0.08); border-radius: 12px; overflow: hidden; margin-top: 32px;
+    }
+    .amc-stat { padding: 20px 22px; background: rgba(255,255,255,0.04); }
+    .amc-stat-n { font-size: 32px; font-weight: 900; color: var(--gold); line-height: 1; }
+    .amc-stat-l { font-size: 11px; color: rgba(255,255,255,0.42); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 5px; }
+    .amc-brands { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 8px; }
+    .amc-brand-pill {
+      font-size: 11px; font-weight: 600; color: rgba(255,255,255,0.5);
+      border: 1px solid rgba(255,255,255,0.12); border-radius: 20px; padding: 4px 12px;
+    }
+
+    /* ── Stats Band ──────────────────────────────── */
+    .about-stats-band { background: var(--black); padding: 80px 0; }
+    .about-stats-inner {
+      display: grid; grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+      align-items: center;
+    }
+    .asr { text-align: center; padding: 0 28px; }
+    .asr-num { font-size: 64px; font-weight: 900; color: var(--gold); line-height: 1; letter-spacing: -0.04em; margin-bottom: 12px; }
+    .asr-lbl { font-size: 12px; font-weight: 700; color: white; text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 8px; }
+    .asr-desc { font-size: 12px; color: rgba(255,255,255,0.38); line-height: 1.55; max-width: 150px; margin: 0 auto; }
+    .asr-div { width: 1px; height: 80px; background: rgba(255,255,255,0.1); }
+
+    /* ── Timeline ────────────────────────────────── */
+    .about-timeline { position: relative; padding-top: 48px; }
+    .about-timeline::before {
+      content: ''; position: absolute; top: 56px; left: 0; right: 0;
+      height: 2px; background: linear-gradient(to right, var(--gold) 0%, var(--border) 100%);
+      z-index: 0;
+    }
+    .tl-items { display: grid; grid-template-columns: repeat(4,1fr); position: relative; z-index: 1; }
+    .tl-item { padding: 0 20px; }
+    .tl-item:first-child { padding-left: 0; }
+    .tl-item:last-child  { padding-right: 0; }
+    .tl-dot {
+      width: 16px; height: 16px; border-radius: 50%;
+      background: var(--border); border: 3px solid white;
+      box-shadow: 0 0 0 2px var(--border);
+      margin-bottom: 24px;
+    }
+    .tl-dot.active { background: var(--gold); box-shadow: 0 0 0 2px var(--gold); }
+    .tl-year  { font-size: 26px; font-weight: 900; color: var(--gold); line-height: 1; margin-bottom: 8px; }
+    .tl-title { font-size: 15px; font-weight: 700; margin-bottom: 10px; color: var(--text-dark); }
+    .tl-desc  { font-size: 13px; color: var(--text-mid); line-height: 1.65; }
+
+    /* ── VM Cards v2 ─────────────────────────────── */
+    .vm-grid-v2 { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+    .vm-card-v2 {
+      border-radius: var(--radius-xl); padding: 46px 36px;
+      border: 1.5px solid var(--border); display: flex; flex-direction: column;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .vm-card-v2:hover { transform: translateY(-10px); box-shadow: var(--shadow-xl); }
+    .vm-vision  { background: linear-gradient(150deg, var(--gold-pale) 0%, white 65%); border-color: var(--gold-light); }
+    .vm-mission { background: var(--black); color: white; border-color: #222; }
+    .vm-values  { background: var(--off-white); border-color: var(--border); }
+    .vm-icon-v2 {
+      width: 64px; height: 64px; border-radius: 18px;
+      display: flex; align-items: center; justify-content: center; margin-bottom: 28px;
+    }
+    .vm-vision  .vm-icon-v2 { background: rgba(200,169,126,0.15); border: 1.5px solid var(--gold-light); color: var(--gold); }
+    .vm-mission .vm-icon-v2 { background: rgba(200,169,126,0.1); border: 1px solid rgba(200,169,126,0.22); color: var(--gold); }
+    .vm-values  .vm-icon-v2 { background: white; border: 1px solid var(--border); color: var(--gold-hover); }
+    .vm-card-v2 h3 { font-size: 22px; font-weight: 800; margin-bottom: 16px; }
+    .vm-mission h3 { color: white; }
+    .vm-card-v2 p { font-size: 15px; line-height: 1.78; flex: 1; margin-bottom: 24px; color: var(--text-mid); }
+    .vm-mission p { color: rgba(255,255,255,0.52); }
+    .vm-tagline-v2 {
+      font-size: 12px; font-weight: 700; letter-spacing: 0.06em;
+      font-style: italic; padding: 10px 16px; border-radius: 7px;
+    }
+    .vm-vision  .vm-tagline-v2 { color: var(--gold-hover); background: rgba(200,169,126,0.14); }
+    .vm-mission .vm-tagline-v2 { color: var(--gold); background: rgba(200,169,126,0.09); }
+    .vm-values  .vm-tagline-v2 { color: var(--gold-hover); background: var(--gold-pale); }
+
+    /* ── Responsive ──────────────────────────────── */
+    @media (max-width:1100px) {
+      .about-brand-grid { gap: 56px; }
+      .about-stats-inner { grid-template-columns: 1fr 1fr; gap: 48px 0; }
+      .asr-div { display: none; }
+      .asr { padding: 0; }
+    }
+    @media (max-width:900px) {
+      .about-brand-grid { grid-template-columns: 1fr; gap: 40px; }
+      .vm-grid-v2 { grid-template-columns: 1fr; max-width: 500px; }
+      .tl-items { grid-template-columns: 1fr 1fr; gap: 40px; }
+      .about-timeline::before { display: none; }
+    }
+    @media (max-width:768px) {
+      .asr-num { font-size: 48px; }
+      .about-stats-band { padding: 60px 0; }
+      .vm-card-v2 { padding: 32px 26px; }
+      .about-hero-v2 { padding-bottom: 64px; }
+    }
+    @media (max-width:480px) {
+      .about-stats-inner { grid-template-columns: 1fr; gap: 36px; }
+      .tl-items { grid-template-columns: 1fr; gap: 32px; }
+      .asr-num { font-size: 40px; }
+      .vm-grid-v2 { max-width: 100%; }
+      .vm-card-v2 { padding: 28px 20px; }
+      .about-manifesto-card { padding: 32px 24px; }
+      .amc-text { font-size: 17px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar solid" id="navbar">
+  <div class="nav-container">
+    <a href="../index.html" class="nav-logo">HOMSPACE</a>
+    <ul class="nav-menu" id="navMenu">
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link">Products <span class="dropdown-arrow">▾</span></a>
+        <div class="dropdown-menu"><div class="dropdown-grid">
+          <a href="wallpaper.html" class="dropdown-item"><span class="di-icon">◈</span><span class="di-text"><strong>Wallpaper</strong><small>100+ designs · 5 tiers</small></span></a>
+          <a href="wall-panels.html" class="dropdown-item"><span class="di-icon">▣</span><span class="di-text"><strong>Wall Panels</strong><small>WPC, PVC, Decorative</small></span></a>
+          <a href="curtains.html" class="dropdown-item"><span class="di-icon">〓</span><span class="di-text"><strong>Curtains</strong><small>Ripple, Pleated, Motorized</small></span></a>
+          <a href="blinds.html" class="dropdown-item"><span class="di-icon">≡</span><span class="di-text"><strong>Blinds</strong><small>Roman, Roller, Zebra</small></span></a>
+          <a href="partition-doors.html" class="dropdown-item"><span class="di-icon">⊟</span><span class="di-text"><strong>Partition Doors</strong><small>Folding, Sliding, Glass</small></span></a>
+          <a href="mosquito-nets.html" class="dropdown-item"><span class="di-icon">⊞</span><span class="di-text"><strong>Mosquito Nets</strong><small>Premium protection</small></span></a>
+        </div></div>
+      </li>
+      <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="tel:+919778063015" class="nav-phone">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.95 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012.86 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+        +91 97780 63015
+      </a>
+      <a href="contact.html" class="btn btn-gold btn-sm">Free Consultation</a>
+    </div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ══ PAGE HERO ═══════════════════════════════════════════ -->
+<section class="page-hero about-hero-v2">
+  <div class="container">
+    <div class="about-hero-inner">
+      <span class="eyebrow">Our Story</span>
+      <h1>About HOMSPACE</h1>
+      <p class="lead">Kerala's most trusted furnishing transformation brand — built on a decade of expertise, thousands of happy customers, and one simple belief.</p>
+      <div class="about-hero-manifesto">
+        <span class="ahm-text">"Every space deserves to be beautiful."</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ BRAND STORY ══════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="about-brand-grid">
+      <!-- Left: narrative -->
+      <div class="about-brand-text fade-up">
+        <span class="eyebrow">Who We Are</span>
+        <h2>More Than a Furnishing Store</h2>
+        <p>HOMSPACE was born from a simple frustration — furnishing a home in Kerala was fragmented, overwhelming, and often disappointing. Customers had to visit ten different shops, coordinate multiple vendors, and still ended up with results that didn't match their vision.</p>
+        <blockquote class="about-brand-pull">
+          "We decided to build the one place that handles it all — beautifully."
+        </blockquote>
+        <p>Today, HOMSPACE is Kerala's single destination for complete home furnishing — wallpaper, wall panels, curtains, blinds, partition doors, and mosquito nets. One partner, one seamless experience, zero hassle.</p>
+        <p>We've completed over 1,000 transformations across Kerala — from cozy apartments in Kochi to luxury villas in Trivandrum and commercial spaces in Thrissur. Every project handled with the same level of care and expertise.</p>
+      </div>
+
+      <!-- Right: manifesto + stat card -->
+      <div class="fade-up fade-up-delay-2">
+        <div class="about-manifesto-card">
+          <p class="amc-text">One partner for every surface in your home. That's not just a service — that's a promise.</p>
+          <span class="amc-attr">— The HOMSPACE Promise</span>
+          <div class="amc-stats">
+            <div class="amc-stat">
+              <div class="amc-stat-n">1,000+</div>
+              <div class="amc-stat-l">Spaces Transformed</div>
+            </div>
+            <div class="amc-stat">
+              <div class="amc-stat-n">10+</div>
+              <div class="amc-stat-l">Years of Expertise</div>
+            </div>
+            <div class="amc-stat">
+              <div class="amc-stat-n">100+</div>
+              <div class="amc-stat-l">Design Options</div>
+            </div>
+            <div class="amc-stat">
+              <div class="amc-stat-n">5</div>
+              <div class="amc-stat-l">Premium Brands</div>
+            </div>
+          </div>
+          <div class="amc-brands">
+            <span class="amc-brand-pill">Marshal</span>
+            <span class="amc-brand-pill">Fedora</span>
+            <span class="amc-brand-pill">Excel</span>
+            <span class="amc-brand-pill">SMPl</span>
+            <span class="amc-brand-pill">Nilaya</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STATS BAND ═══════════════════════════════════════════ -->
+<section class="about-stats-band">
+  <div class="container">
+    <div class="about-stats-inner">
+      <div class="asr fade-up">
+        <div class="asr-num">10+</div>
+        <div class="asr-lbl">Years in Business</div>
+        <div class="asr-desc">A decade furnishing homes across Kerala with passion</div>
+      </div>
+      <div class="asr-div"></div>
+      <div class="asr fade-up fade-up-delay-1">
+        <div class="asr-num">1,000+</div>
+        <div class="asr-lbl">Spaces Transformed</div>
+        <div class="asr-desc">Apartments, villas, offices, hotels — every type of space</div>
+      </div>
+      <div class="asr-div"></div>
+      <div class="asr fade-up fade-up-delay-2">
+        <div class="asr-num">100+</div>
+        <div class="asr-lbl">Design Options</div>
+        <div class="asr-desc">Wallpaper, panels, curtains, blinds — a range for every taste</div>
+      </div>
+      <div class="asr-div"></div>
+      <div class="asr fade-up fade-up-delay-3">
+        <div class="asr-num">5</div>
+        <div class="asr-lbl">Premium Brands</div>
+        <div class="asr-desc">Marshal, Fedora, Excel, SMPl, Nilaya — curated for excellence</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TIMELINE ════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="eyebrow">Our Journey</span>
+      <h2>How We Got Here</h2>
+      <p>From a small wallpaper shop to Kerala's most complete furnishing partner — a decade of growth and thousands of happy homes.</p>
+    </div>
+    <div class="about-timeline fade-up">
+      <div class="tl-items">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2013</div>
+          <div class="tl-title">Founded</div>
+          <div class="tl-desc">Started as a wallpaper specialist in Ernakulam with a vision to serve Kerala homes better — with expertise, not just products.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2016</div>
+          <div class="tl-title">Complete Range</div>
+          <div class="tl-desc">Added curtains, blinds, and wall panels — evolving into a complete furnishing destination under one roof.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2020</div>
+          <div class="tl-title">1,000 Homes</div>
+          <div class="tl-desc">Reached the milestone of 1,000 transformed spaces across Kerala — a proud moment that redefined our ambition.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot active"></div>
+          <div class="tl-year">Today</div>
+          <div class="tl-title">Your Turn</div>
+          <div class="tl-desc">Kerala's most trusted furnishing partner — ready to transform your home, office, or commercial space next.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ VISION MISSION ══════════════════════════════════════ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="eyebrow">Our Purpose</span>
+      <h2>Vision, Mission &amp; Values</h2>
+      <p>Three principles that guide every consultation, every installation, and every customer relationship we build.</p>
+    </div>
+    <div class="vm-grid-v2">
+      <div class="vm-card-v2 vm-vision fade-up">
+        <div class="vm-icon-v2">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2"/></svg>
+        </div>
+        <h3>Our Vision</h3>
+        <p>To become Kerala's most trusted furnishing partner — the brand that every homeowner, designer, and builder thinks of first when they want to transform a space beautifully and effortlessly.</p>
+        <div class="vm-tagline-v2">"Beautiful Spaces for Every Kerala Home"</div>
+      </div>
+      <div class="vm-card-v2 vm-mission fade-up fade-up-delay-1">
+        <div class="vm-icon-v2">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h3>Our Mission</h3>
+        <p>To deliver complete furnishing solutions that transform spaces into places people love — through expert design advice, premium products, professional installation, and after-sales care that goes the extra mile.</p>
+        <div class="vm-tagline-v2">"Expertise + Quality + Care, Every Time"</div>
+      </div>
+      <div class="vm-card-v2 vm-values fade-up fade-up-delay-2">
+        <div class="vm-icon-v2">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </div>
+        <h3>Our Values</h3>
+        <p>Personalisation above all else. We treat every home as unique, every customer as a long-term relationship, and every installation as a reflection of our expertise and pride in craftsmanship.</p>
+        <div class="vm-tagline-v2">"Your Home, Your Vision, Our Craft"</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ WHY HOMSPACE ════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="eyebrow">Our Difference</span>
+      <h2>Why Customers Choose HOMSPACE</h2>
+      <p>We're not just a products company. We're a transformation partner — with the expertise, range, and commitment to deliver what we promise.</p>
+    </div>
+    <div class="pillars-grid">
+      <div class="pillar-card fade-up">
+        <div class="pillar-icon">
+          <svg width="26" height="26" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="14" cy="14" r="12"/><circle cx="14" cy="14" r="5"/><path d="M14 2v4M14 22v4M2 14h4M22 14h4" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Personalisation First</h3>
+        <p>We listen before we suggest. Every home is different — our solutions are shaped around you, your lifestyle, and your budget.</p>
+      </div>
+      <div class="pillar-card fade-up fade-up-delay-1">
+        <div class="pillar-icon">
+          <svg width="26" height="26" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 3L25 9L25 21L14 27L3 21L3 9Z" stroke-linejoin="round"/><path d="M14 3L14 27M3 9L25 21M25 9L3 21" stroke-opacity="0.4"/></svg>
+        </div>
+        <h3>10+ Years Expertise</h3>
+        <p>We've seen every type of wall, window, and space in Kerala. That experience means we know exactly what works before installation day.</p>
+      </div>
+      <div class="pillar-card fade-up fade-up-delay-2">
+        <div class="pillar-icon">
+          <svg width="26" height="26" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="22" height="22" rx="2"/><path d="M3 12h22M12 12v13" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Complete Under One Roof</h3>
+        <p>Wallpaper, curtains, blinds, wall panels, partition doors, mosquito nets — your entire furnishing vision, one trusted partner.</p>
+      </div>
+      <div class="pillar-card fade-up fade-up-delay-3">
+        <div class="pillar-icon">
+          <svg width="26" height="26" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="14" cy="14" r="12"/><path d="M8 14.5L12 18.5L20 10.5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+        </div>
+        <h3>Professional End-to-End</h3>
+        <p>Site visit, measurement, design advice, installation, and after-sales support — every step handled professionally. No shortcuts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ VS COMPARISON ═══════════════════════════════════════ -->
+<section class="section section-warm">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="eyebrow">The HOMSPACE Difference</span>
+      <h2>What Sets Us Apart</h2>
+      <p>A side-by-side look at the HOMSPACE experience versus a typical furnishing shop.</p>
+    </div>
+    <div class="difference-comparison fade-up">
+      <div class="comparison-col">
+        <h4 class="comparison-title">Typical Furnishing Shops</h4>
+        <ul class="comparison-list negative">
+          <li>Sell products, not solutions</li>
+          <li>No design guidance or consultation</li>
+          <li>You arrange your own installation</li>
+          <li>Multiple vendors — multiple headaches</li>
+          <li>No after-sales support</li>
+          <li>No site visit or measurement</li>
+          <li>Generic suggestions, not personalised</li>
+        </ul>
+      </div>
+      <div class="comparison-divider">VS</div>
+      <div class="comparison-col">
+        <h4 class="comparison-title gold-text">HOMSPACE</h4>
+        <ul class="comparison-list positive">
+          <li>Understands your lifestyle and vision</li>
+          <li>Free design consultation &amp; mood board</li>
+          <li>Professional installation included</li>
+          <li>One partner, complete responsibility</li>
+          <li>After-sales support and warranty</li>
+          <li>Free site visit &amp; measurement</li>
+          <li>Recommendations tailored to you</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ BRAND PARTNERS ══════════════════════════════════════ -->
+<section class="brands-section">
+  <div class="container">
+    <div class="brands-header">
+      <p>Premium Wallpaper Brands We Stock</p>
+    </div>
+    <div class="brands-strip">
+      <div class="brand-pill">Marshal</div>
+      <div class="brand-pill">Fedora</div>
+      <div class="brand-pill">Excel</div>
+      <div class="brand-pill">SMPl</div>
+      <div class="brand-pill">Nilaya</div>
+      <div class="brand-pill brand-pill-more">+ More Brands</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ══════════════════════════════════════════════════ -->
+<section class="product-cta" id="cta">
+  <div class="container">
+    <div class="product-cta-grid">
+      <div class="product-cta-left">
+        <span class="eyebrow">Ready to Begin?</span>
+        <h2>Let's Transform Your Space Together</h2>
+        <p>Whether furnishing a new home or renovating an existing one — we'd love to be your furnishing partner. Book a free consultation today.</p>
+        <ul class="cta-checklist">
+          <li>Free home visit &amp; expert consultation</li>
+          <li>No-obligation design advice &amp; samples</li>
+          <li>Professional installation by trained team</li>
+          <li>After-sales support included</li>
+        </ul>
+        <div class="product-cta-btns">
+          <a href="tel:+919778063015" class="btn btn-outline-white">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" style="margin-right:6px"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.95 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012.86 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            +91 97780 63015
+          </a>
+          <a href="https://wa.me/919778063015?text=Hi%20HOMSPACE!%20I%27d%20like%20to%20book%20a%20free%20consultation." class="btn-whatsapp" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.118 1.532 5.845L.054 23.625 6.012 22.12A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.814 9.814 0 01-5.002-1.37l-.357-.213-3.713.974.993-3.63-.232-.374A9.817 9.817 0 012.182 12C2.182 6.573 6.573 2.182 12 2.182c5.428 0 9.818 4.39 9.818 9.818 0 5.427-4.39 9.818-9.818 9.818z"/></svg>
+            WhatsApp Now
+          </a>
+        </div>
+      </div>
+      <div>
+        <form class="enquiry-form">
+          <h3>Book Free Consultation</h3>
+          <div class="form-group"><label>Your Name</label><input type="text" placeholder="e.g. Rahul Sharma" required></div>
+          <div class="form-row">
+            <div class="form-group"><label>Phone</label><input type="tel" placeholder="+91 XXXXX XXXXX" required></div>
+            <div class="form-group"><label>City</label><input type="text" placeholder="e.g. Kochi"></div>
+          </div>
+          <div class="form-group">
+            <label>Interested In</label>
+            <select><option value="">Select a product / service</option><option>Wallpaper</option><option>Wall Panels</option><option>Curtains</option><option>Blinds</option><option>Partition Doors</option><option>Mosquito Nets</option><option>Full Home Package</option></select>
+          </div>
+          <div class="form-group"><label>Message (optional)</label><textarea placeholder="Tell us about your space…" rows="3"></textarea></div>
+          <button type="submit" class="btn btn-gold btn-full">Book Free Consultation</button>
+          <p class="form-note">Free site visit · No obligations</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">HOMSPACE</div>
+        <p class="footer-tagline">Spaces, Beautifully Yours.</p>
+        <p class="footer-desc">Kerala's most trusted furnishing transformation partner — from walls to windows, we create homes people love to live in.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="https://wa.me/919778063015" aria-label="WhatsApp"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.118 1.532 5.845L.054 23.625 6.012 22.12A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.814 9.814 0 01-5.002-1.37l-.357-.213-3.713.974.993-3.63-.232-.374A9.817 9.817 0 012.182 12C2.182 6.573 6.573 2.182 12 2.182c5.428 0 9.818 4.39 9.818 9.818 0 5.427-4.39 9.818-9.818 9.818z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h5>Products</h5>
+        <ul>
+          <li><a href="wallpaper.html">Wallpaper</a></li>
+          <li><a href="wall-panels.html">Wall Panels</a></li>
+          <li><a href="curtains.html">Curtains</a></li>
+          <li><a href="blinds.html">Blinds</a></li>
+          <li><a href="partition-doors.html">Partition Doors</a></li>
+          <li><a href="mosquito-nets.html">Mosquito Nets</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="../index.html#packages">Packages</a></li>
+          <li><a href="../index.html#process">Our Process</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+919778063015">+91 97780 63015</a></li>
+          <li><a href="mailto:info@homspace.store">info@homspace.store</a></li>
+          <li><a href="https://homspace.store" target="_blank">homspace.store</a></li>
+          <li style="color:var(--text-light);font-size:13px;">Kalavath Road,<br>Palarivattom, Ernakulam</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 HOMSPACE. All rights reserved.</p>
+      <p>Spaces, Beautifully Yours.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
