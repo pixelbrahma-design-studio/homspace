@@ -945,14 +945,26 @@ label.radio-label { display: flex; align-items: center; gap: 8px; font-size: 14p
   .nav-container { padding: 0 20px; }
 
   /* Hero */
-  .hero-content  { padding: 40px 20px 80px; grid-template-columns: 1fr; }
-  .hero-visual   { display: none; }
-  .hero-headline { font-size: clamp(40px, 11vw, 68px); }
-  .hero-actions  { flex-direction: column; align-items: flex-start; gap: 12px; }
-  .hero-actions .btn { width: 100%; text-align: center; }
+  .hero-content  { padding: 40px 20px 56px; grid-template-columns: 1fr; gap: 32px; }
+  .hero-headline { font-size: clamp(38px, 10vw, 60px); }
+  .hero-actions  { flex-direction: row; flex-wrap: wrap; gap: 12px; margin-bottom: 0; }
+  .hero-actions .btn { width: auto; }
   .hero-stats    { flex-wrap: wrap; gap: 0; }
   .stat          { padding: 0 16px; }
-  .scroll-indicator { left: 20px; }
+
+  /* Hero visual — flatten to 2-col grid */
+  .hero-visual   { min-height: auto; align-items: stretch; }
+  .hv-glow, .hv-ring { display: none; }
+  .hv-grid       { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; width: 100%; }
+  .hv-col        { display: contents; }
+  .hv-col-a      { margin-top: 0; animation: none; }
+  .hv-col-b      { animation: none; }
+  .hv-card       { width: auto; padding: 12px 14px; gap: 10px; border-radius: 12px; }
+  .hv-card-icon  { width: 36px; height: 36px; border-radius: 8px; flex-shrink: 0; }
+  .hv-card-name  { font-size: 12.5px; }
+  .hv-card-tag   { font-size: 9.5px; }
+  .hv-center-label { position: static; transform: none; margin: 16px auto 0; width: fit-content; }
+  .scroll-indicator { display: none; }
 
   /* Sections */
   .section        { padding: 60px 0; }
@@ -1004,22 +1016,23 @@ label.radio-label { display: flex; align-items: center; gap: 8px; font-size: 14p
   .insta-section  { padding: 64px 0; }
   .insta-inner    { grid-template-columns: 1fr; gap: 32px; }
   .insta-grid     { grid-template-columns: repeat(3, 1fr); }
-  .insta-actions  { flex-direction: column; gap: 10px; }
-  .insta-actions .btn { text-align: center; }
+  /* Buttons — global mobile: no full-width, smaller padding */
+  .btn    { width: auto; padding: 11px 22px; font-size: 13px; }
+  .btn-lg { padding: 13px 28px; font-size: 14px; }
+  .btn-whatsapp-lg { padding: 13px 24px; font-size: 14px; }
+
+  .insta-actions  { flex-direction: row; flex-wrap: wrap; gap: 10px; }
 
   /* CTA / Contact */
   .cta-section    { padding: 64px 0; }
   .cta-grid       { grid-template-columns: 1fr; gap: 40px; }
   .cta-contact-items { margin-bottom: 24px; }
-  .btn-whatsapp-lg { width: 100%; justify-content: center; padding: 16px 24px; }
 
   /* Product CTA */
   .product-cta    { padding: 64px 0; }
   .product-cta-grid { grid-template-columns: 1fr; gap: 36px; }
   .product-cta-left h2 { font-size: clamp(24px, 5vw, 36px); }
-  .product-cta-btns { flex-direction: column; align-items: flex-start; gap: 10px; }
-  .product-cta-btns .btn,
-  .product-cta-btns .btn-whatsapp { width: 100%; justify-content: center; }
+  .product-cta-btns { flex-direction: row; flex-wrap: wrap; gap: 10px; }
 
   /* Forms */
   .enquiry-form   { padding: 28px 20px; }
@@ -1110,8 +1123,7 @@ label.radio-label { display: flex; align-items: center; gap: 8px; font-size: 14p
   .page-hero p    { font-size: 14px; }
 
   /* Package card */
-  .package-footer { flex-direction: column; gap: 14px; align-items: flex-start; }
-  .package-footer .btn { width: 100%; text-align: center; }
+  .package-footer { flex-direction: row; flex-wrap: wrap; gap: 10px; align-items: flex-start; }
 }
 
 /* ═══════════════════════════════════════════════════════════
